@@ -1,0 +1,401 @@
+/* Estilos personalizados para complementar Bootstrap y asemejarse al diseño de la imagen */
+
+body {
+    font-family: 'Georgia', serif; /* Una fuente serif que evoca la literatura clásica */
+    background-color: #f8f8f8; /* Un fondo muy claro */
+    color: #333;
+    line-height: 1.8;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Sección del Menú */
+.navbar {
+    background-color: #f8f8f8 !important; /* Fondo claro para el menú */
+}
+
+.navbar-brand {
+    font-family: 'Lora', serif; /* Una fuente elegante para la marca */
+    font-weight: bold;
+    color: #558b2f !important; /* Un verde terroso */
+}
+
+.navbar-nav .nav-link {
+    color: #444;
+    margin-left: 15px;
+    font-size: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #558b2f;
+}
+
+.navbar-toggler {
+    border-color: #558b2f;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(85,139,47, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Sección Hero */
+.hero {
+    background-color: #f0fff0; /* Un verde muy pálido */
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-family: 'Lora', serif;
+    color: #386641; /* Un verde oscuro */
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero .lead {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.hero img {
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero img:hover {
+    transform: scale(1.05);
+}
+
+.hero .btn-success {
+    background-color: #558b2f;
+    border-color: #558b2f;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.hero .btn-success:hover {
+    background-color: #437336;
+    border-color: #437336;
+}
+
+/* Sección Conoce al Autor */
+.author-section {
+    padding: 80px 0;
+    background-color: #fff;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.author-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.author-section img {
+    max-width: 160px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.author-section h3 {
+    font-family: 'Lora', serif;
+    color: #386641;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.author-section .lead {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.author-section p {
+    color: #444;
+}
+
+.author-section .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #777;
+    transition: color 0.3s ease;
+}
+
+.author-section .social-icons a:hover {
+    color: #558b2f;
+}
+
+/* Sección Reseñas */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.testimonials-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.testimonials-section h2 {
+    font-family: 'Lora', serif;
+    color: #386641;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.testimonials-section .card {
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.testimonials-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-section .card-body {
+    padding: 30px;
+}
+
+.testimonials-section .text-warning {
+    color: #ffc107 !important;
+}
+
+.testimonials-section .card-text {
+    color: #444;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonials-section .card-text small {
+    color: #777;
+    font-style: normal;
+}
+
+/* Sección de Cita */
+.quote-section {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.quote-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.quote-section blockquote {
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.quote-section .blockquote-footer {
+    color: #ddd;
+    font-size: 1.1rem;
+}
+
+.quote-section .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.quote-section .btn-outline-light:active {
+    transform: scale(0.98);
+}
+
+.quote-section .btn-outline-light:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Sección de Ediciones */
+#ediciones {
+    padding: 80px 0;
+    background-color: #fff;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#ediciones.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#ediciones h2 {
+    font-family: 'Lora', serif;
+    color: #386641;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#ediciones .card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+#ediciones .card-header {
+    background-color: #558b2f;
+    color: white;
+    border-bottom: none;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+#ediciones .card-header.bg-primary {
+    background-color: #007bff; /* Color para la edición digital */
+}
+
+#ediciones .card-body {
+    padding: 30px;
+    text-align: center;
+}
+
+#ediciones .pricing-card-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#ediciones .list-unstyled li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+#ediciones .btn-success,
+#ediciones .btn-primary {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: transform 0.1s ease-in-out;
+}
+
+#ediciones .btn-success:active,
+#ediciones .btn-primary:active {
+    transform: scale(0.98);
+}
+
+#ediciones .btn-block {
+    display: block;
+    width: 100%;
+}
+
+
+/* Footer Mejorado */
+footer.bg-dark {
+    background-color: #343a40 !important; /* Manteniendo el fondo oscuro */
+}
+
+footer h5 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #adb5bd;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+footer .text-muted {
+    color: #6c757d !important;
+}
+
+footer a.text-white:hover {
+    color: #f8f9fa !important;
+}
+
+footer a.text-muted:hover {
+    color: #fff !important;
+}
+
+footer .fab {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .fab:hover {
+    color: #558b2f; /* Un verde similar al tema */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero .lead {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero .lead {
+        font-size: 1.1rem;
+    }
+    .author-section {
+        padding: 60px 0;
+        text-align: center !important;
+    }
+    .author-section .row > div {
+        text-align: center;
+    }
+    .testimonials-section {
+        padding: 60px 0;
+    }
+    #ediciones {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero .lead {
+        font-size: 1rem;
+    }
+    #ediciones .pricing-card-title {
+        font-size: 2rem;
+    }
+}
