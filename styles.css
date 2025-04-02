@@ -399,3 +399,59 @@ footer .fab:hover {
         font-size: 2rem;
     }
 }
+
+/* Estilos personalizados para la ventana de pago */
+.modal-title-payment {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.payment-method-section {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.payment-method-section label {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.payment-details-section {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.amount-to-pay {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.confirm-payment-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.confirm-payment-button:hover {
+    background-color: #0056b3;
+}
+
+.payment-disclaimer {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-top: 10px;
+    text-align: center;
+}
