@@ -1,7 +1,7 @@
 CIEN AÑOS DE SOLEDAD
 # Landing: Cien años de soledad
 
-Este proyecto es una página dedicada al famoso libro "Cien años de soledad" del autor Gabriel García Márquez. El objetivo de esta página es informar a los visitantes sobre el libro y ofrecerles la opción de adquirirlo en diferentes formatos. LINK: Libro.infinityfreeapp.com
+Este proyecto es una página dedicada al famoso libro "Cien años de soledad" del autor Gabriel García Márquez. El objetivo de esta página es informar a los visitantes sobre el libro y ofrecerles la opción de adquirirlo en diferentes formatos. LINK: http://libro.infinityfreeapp.com/?i=1
 
 ## Contenido
 
